@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Ways to Vote</title>
+  
+  <meta name=viewport content='width=450'>
+
+  <style>
+  body {
+  margin:40px auto;
+  max-width:450px;
+  line-height:1.5;
+  padding:0 10px 
+  }
+  </style>
+  
+  <script>
+  function online()
+  {
+    alert("Unfortunately your country doesn't have this form of voting enabled yet.:-(\n\nWe'll do our best to communicate your desire, but for now, you'll have to choose another method.");
+  }
+  function mail()
+  {
+    alert("This is called 'absentee' voting.\n\nWe're directing you to a page with more information on how to sign up...");
+    window.location.href = "https://www.fvap.gov/citizen-voter/overview";
+  }
+  function physical()
+  {
+    alert("Ok, lets find out where and when you need to go...");
+    // TODO: location!
+    window.location.href = "https://gttp.votinginfoproject.org/";
+  }
+  function help()
+  {
+    window.location.href = "Screen3.html";
+  }
+  </script>
+  
+  </head>
+<body>
+
+<div>
+  That's a fine choice, but we need to register it officially to make it <i>count</i>. <strong>How do you want to make it official?</strong><br>
+  &nbsp;<br>
+  <center>
+  <!-- More HTML 1; gosh, I like tables
+    <ul>
+    <li><a href="javascript:online()">Vote Online</a></li>
+    <li><a href="javascript:mail()">Vote by mail</a></li>
+    <li><a href="javascript:physical()">Vote physically</a></li>
+    <li><a href="javascript:help()">Help me!</a></li>
+    </ul>-->
+    <table>
+      <tr>
+        <td><img src=online.png></td>
+        <td><a href="javascript:online()">Vote Online</a></td>
+      </tr>
+      <tr>
+        <td><img src=mail.png></td>
+        <td><a href="javascript:mail()">Vote by Snail Mail</a></td>
+      </tr>
+      <tr>
+        <td><img src=physical.png></td>
+        <td><a href="javascript:physical()">Vote Physically</a></td>
+      </tr>
+      <tr>
+        <td><img src=help.png></td>
+        <td><a href="javascript:help()">Get Help Voting</a></td>
+      </tr>
+    
+  </ul> 
+</div>
+
+</body>
+</html>
