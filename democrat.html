@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Votebugger Democrat</title>
+  
+  <meta name=viewport content='width=450'>
+
+  <style>
+  body {
+  margin:40px auto;
+  max-width:450px;
+  line-height:1.5;
+  padding:0 10px 
+  }
+  </style>
+  
+  <script>
+  function online()
+  {
+    alert("It is 2020. Still nobody can vote online.\n\nNo worries we make it easy to use Snail Mail.\n\n\n");
+  }
+  function mail()
+  {
+    alert("We will mail you what you need to vote.\nEnter your Name and Address:\n\n \(Form TBD\) \n\n\n");
+  }
+  function physical()
+  {
+    alert("Ok, lets find out where and when you need to go...");
+    // TODO: location!
+    window.location.href = "https://gttp.votinginfoproject.org/";
+  }
+  
+  function help()
+  {
+    alert("Help will be added. \(TBD\)");
+  }
+  
+  function volunteer()
+  {
+    alert("Help Biden win:\nMail ballots to those who ask for it.\n\n Signup button (TBD)");
+  }
+  </script>
+  
+  </head>
+<body>
+
+<div class=center>
+  <center>
+  <p><h1>Vote Democrat</h1></p>
+  <!-- Here comes some HTML 1 -->
+  <table cellspacing=20><tr>
+    <td>
+     
+      <img src=Biden1.jpeg>
+      <br><center><strong>Biden Bugger</strong>
+     
+    </td>
+  </tr></table>
+</div>
+
+<div>
+  <center>
+  <!-- More HTML 1; gosh, I like tables
+    <ul>
+    <li><a href="javascript:online()">Vote Online</a></li>
+    <li><a href="javascript:mail()">Vote by mail</a></li>
+    <li><a href="javascript:physical()">Vote physically</a></li>
+    <li><a href="javascript:help()">Help me!</a></li>
+    </ul>-->
+    <table>
+      <tr>
+        <td><img src=online.png></td>
+        <td><a href="javascript:online()">Vote Online</a></td>
+      </tr>
+      <tr>
+        <td><img src=mail.png></td>
+        <td><a href="javascript:mail()">Vote by Snail Mail</a></td>
+      </tr>
+      <!-- Skip physical --too much work and may not happen in the world of disease
+      <tr>
+        <td><img src=physical.png></td>
+        <td><a href="javascript:physical()">Vote Physically</a></td>
+      </tr>
+      -->
+      <tr>
+        <td><img src=help.png></td>
+        <td><a href="javascript:help()">Get Help Voting</a></td>
+      </tr>
+      
+      <tr>
+        <td><img src=physical.png></td>
+        <td><a href="javascript:volunteer()">Volunteer*</a></td>
+      </tr>
+      
+      <tr> 		
+        <td><a href=index.html><center>Home<center></a></td>	  
+      </tr>
+    </table>
+</div>
+
+</body>
+</html>
