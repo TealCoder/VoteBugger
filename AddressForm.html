@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- TODO:
+1: verify the inputs are kinda OK /w javascript
+2: redirect the form inputs to CGI Bin
+3: REALLY Verify the inputs
+  - email address contactable
+  - postal address reachable through USPS checker
+4: Send an email to Volunteer
+5: Also note that diferent residence and mailing addresses might be required.
+-->
+
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Address Form</title>
+
+  <meta name=viewport content='width=450'>
+
+  <style>
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  </style>
+
+<script>
+
+function submitIt()
+{
+  // TODO: Verify inputs as much as possible
+  return true;
+}
+
+
+</script>
+  
+  </head>
+<body>
+
+<!-- Pretty Stuff -->
+<div class=center>
+<center>
+<h3>Get Help</h3>
+Get help electing this bugger:<br>
+<table><tr><td bgcolor=lightblue>
+TODO: <br>Picture <br>of a <br>bugger <br>goes here
+</td></tr></table>
+
+<br>&nbsp;<br>
+
+
+<!-- Form Stuff -->
+<form onSubmit="return submitIt(this)" action="../cgi-bin/getHelp.py" name=theForm>
+<table>
+<tr><td colspan=2 align=center>
+Just give us some information and we'll send you what you need.<br>&nbsp;</td></tr>
+
+<tr><td><label for="fname">Full Name</label></td>
+<td><input type="text" id="fname" name="firstname" placeholder="John M. Doe"></td></tr>
+
+<tr><td><label for="email">Email</label></td>
+<td><input type="text" id="email" name="email" placeholder="john@example.com"></td></tr>
+
+<tr><td><label for="adr">Address</label></td>
+<td><input type="text" id="adr" name="address" placeholder="542 W. 15th Street"></td></tr>
+
+<tr><td><label for="city">City</label></td>
+<td><input type="text" id="city" name="city" placeholder="New York"></td></tr></td></td>
+
+<tr><td><label for="state">State</label></td>
+<td><input type="text" id="state" name="state" placeholder="NY"></td></tr>
+
+<tr><td><label for="zip">Zip</label></td>
+<td><input type="text" id="zip" name="zip" placeholder="10001"></td></tr>
+
+<tr><td colspan=2 align=center>
+&nbsp;<br>
+<input type=submit value="Help me!">
+</td></tr>
+
+</table>
+</form>
+
+</div>
+
+</body>
+</html>
